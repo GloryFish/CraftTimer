@@ -13,7 +13,6 @@
 @property (nonatomic, assign, readonly) NSTimeInterval accumulatedTime;
 @property (nonatomic, strong, readonly) NSDate* segmentStartTime;
 
-- (CTCraftTimerState)calculateState;
 - (void)reset;
 
 @end
