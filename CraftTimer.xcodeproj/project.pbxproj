@@ -22,14 +22,14 @@
 		C9ADDF1715B4FEB700A33214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9ADDF1915B4FEB700A33214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9ADDF1B15B4FEB700A33214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C9ADDF1F15B4FEB700A33214 /* CraftTimer-Info.plist */ = {isa = PBXFileReference; path = "CraftTimer-Info.plist"; sourceTree = "<group>"; };
+		C9ADDF1F15B4FEB700A33214 /* CraftTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CraftTimer-Info.plist"; sourceTree = "<group>"; };
 		C9ADDF2115B4FEB700A33214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9ADDF2315B4FEB700A33214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9ADDF2515B4FEB700A33214 /* CraftTimer-Prefix.pch */ = {isa = PBXFileReference; path = "CraftTimer-Prefix.pch"; sourceTree = "<group>"; };
-		C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */ = {isa = PBXFileReference; path = CTAppDelegate.h; sourceTree = "<group>"; };
+		C9ADDF2515B4FEB700A33214 /* CraftTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CraftTimer-Prefix.pch"; sourceTree = "<group>"; };
+		C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTAppDelegate.h; sourceTree = "<group>"; };
 		C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
 		C9ADDF2A15B4FEB700A33214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C9ADDF2C15B4FEB700A33214 /* CTViewController.h */ = {isa = PBXFileReference; path = CTViewController.h; sourceTree = "<group>"; };
+		C9ADDF2C15B4FEB700A33214 /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
 		C9ADDF2D15B4FEB700A33214 /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
