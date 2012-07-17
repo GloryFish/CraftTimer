@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9ADDF1815B4FEB700A33214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1715B4FEB700A33214 /* UIKit.framework */; };
+		C9ADDF1A15B4FEB700A33214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1915B4FEB700A33214 /* Foundation.framework */; };
+		C9ADDF1C15B4FEB700A33214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1B15B4FEB700A33214 /* CoreGraphics.framework */; };
+		C9ADDF2215B4FEB700A33214 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDF2015B4FEB700A33214 /* InfoPlist.strings */; };
+		C9ADDF2415B4FEB700A33214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2315B4FEB700A33214 /* main.m */; };
+		C9ADDF2815B4FEB700A33214 /* CTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */; };
+		C9ADDF2B15B4FEB700A33214 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */; };
+		C9ADDF2E15B4FEB700A33214 /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2D15B4FEB700A33214 /* CTViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9ADDF1315B4FEB700A33214 /* CraftTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ADDF1715B4FEB700A33214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9ADDF1915B4FEB700A33214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9ADDF1B15B4FEB700A33214 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9ADDF1F15B4FEB700A33214 /* CraftTimer-Info.plist */ = {isa = PBXFileReference; path = "CraftTimer-Info.plist"; sourceTree = "<group>"; };
+		C9ADDF2115B4FEB700A33214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9ADDF2315B4FEB700A33214 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9ADDF2515B4FEB700A33214 /* CraftTimer-Prefix.pch */ = {isa = PBXFileReference; path = "CraftTimer-Prefix.pch"; sourceTree = "<group>"; };
+		C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */ = {isa = PBXFileReference; path = CTAppDelegate.h; sourceTree = "<group>"; };
+		C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
+		C9ADDF2A15B4FEB700A33214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C9ADDF2C15B4FEB700A33214 /* CTViewController.h */ = {isa = PBXFileReference; path = CTViewController.h; sourceTree = "<group>"; };
+		C9ADDF2D15B4FEB700A33214 /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9ADDF1015B4FEB700A33214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ADDF1815B4FEB700A33214 /* UIKit.framework in Frameworks */,
+				C9ADDF1A15B4FEB700A33214 /* Foundation.framework in Frameworks */,
+				C9ADDF1C15B4FEB700A33214 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9ADDF0815B4FEB700A33214 = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF1D15B4FEB700A33214 /* CraftTimer */,
+				C9ADDF1615B4FEB700A33214 /* Frameworks */,
+				C9ADDF1415B4FEB700A33214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9ADDF1415B4FEB700A33214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF1315B4FEB700A33214 /* CraftTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9ADDF1615B4FEB700A33214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF1715B4FEB700A33214 /* UIKit.framework */,
+				C9ADDF1915B4FEB700A33214 /* Foundation.framework */,
+				C9ADDF1B15B4FEB700A33214 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9ADDF1D15B4FEB700A33214 /* CraftTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */,
+				C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */,
+				C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */,
+				C9ADDF2C15B4FEB700A33214 /* CTViewController.h */,
+				C9ADDF2D15B4FEB700A33214 /* CTViewController.m */,
+				C9ADDF1E15B4FEB700A33214 /* Supporting Files */,
+			);
+			path = CraftTimer;
+			sourceTree = "<group>";
+		};
+		C9ADDF1E15B4FEB700A33214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF1F15B4FEB700A33214 /* CraftTimer-Info.plist */,
+				C9ADDF2015B4FEB700A33214 /* InfoPlist.strings */,
+				C9ADDF2315B4FEB700A33214 /* main.m */,
+				C9ADDF2515B4FEB700A33214 /* CraftTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9ADDF1215B4FEB700A33214 /* CraftTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9ADDF3115B4FEB700A33214 /* Build configuration list for PBXNativeTarget "CraftTimer" */;
+			buildPhases = (
+				C9ADDF0F15B4FEB700A33214 /* Sources */,
+				C9ADDF1015B4FEB700A33214 /* Frameworks */,
+				C9ADDF1115B4FEB700A33214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CraftTimer;
+			productName = CraftTimer;
+			productReference = C9ADDF1315B4FEB700A33214 /* CraftTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9ADDF0A15B4FEB700A33214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CT;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = GloryFish.org;
+			};
+			buildConfigurationList = C9ADDF0D15B4FEB700A33214 /* Build configuration list for PBXProject "CraftTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9ADDF0815B4FEB700A33214;
+			productRefGroup = C9ADDF1415B4FEB700A33214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9ADDF1215B4FEB700A33214 /* CraftTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9ADDF1115B4FEB700A33214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ADDF2215B4FEB700A33214 /* InfoPlist.strings in Resources */,
+				C9ADDF2B15B4FEB700A33214 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9ADDF0F15B4FEB700A33214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ADDF2415B4FEB700A33214 /* main.m in Sources */,
+				C9ADDF2815B4FEB700A33214 /* CTAppDelegate.m in Sources */,
+				C9ADDF2E15B4FEB700A33214 /* CTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9ADDF2015B4FEB700A33214 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ADDF2115B4FEB700A33214 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ADDF2A15B4FEB700A33214 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9ADDF2F15B4FEB700A33214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9ADDF3015B4FEB700A33214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9ADDF3215B4FEB700A33214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CraftTimer/CraftTimer-Prefix.pch";
+				INFOPLIST_FILE = "CraftTimer/CraftTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9ADDF3315B4FEB700A33214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CraftTimer/CraftTimer-Prefix.pch";
+				INFOPLIST_FILE = "CraftTimer/CraftTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9ADDF0D15B4FEB700A33214 /* Build configuration list for PBXProject "CraftTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9ADDF2F15B4FEB700A33214 /* Debug */,
+				C9ADDF3015B4FEB700A33214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9ADDF3115B4FEB700A33214 /* Build configuration list for PBXNativeTarget "CraftTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9ADDF3215B4FEB700A33214 /* Debug */,
+				C9ADDF3315B4FEB700A33214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9ADDF0A15B4FEB700A33214 /* Project object */;
+}
