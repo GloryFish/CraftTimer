@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C925F1CA15B5004100DA6C2E /* CTCraftTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = C925F1C915B5004100DA6C2E /* CTCraftTimer.m */; };
 		C9ADDF1815B4FEB700A33214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1715B4FEB700A33214 /* UIKit.framework */; };
 		C9ADDF1A15B4FEB700A33214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1915B4FEB700A33214 /* Foundation.framework */; };
 		C9ADDF1C15B4FEB700A33214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ADDF1B15B4FEB700A33214 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C925F1C815B5004100DA6C2E /* CTCraftTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CTCraftTimer.h; sourceTree = "<group>"; };
+		C925F1C915B5004100DA6C2E /* CTCraftTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCraftTimer.m; sourceTree = "<group>"; };
 		C9ADDF1315B4FEB700A33214 /* CraftTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ADDF1715B4FEB700A33214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9ADDF1915B4FEB700A33214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +50,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C925F1CC15B5053F00DA6C2E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF2C15B4FEB700A33214 /* CTViewController.h */,
+				C9ADDF2D15B4FEB700A33214 /* CTViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C925F1CD15B5054300DA6C2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C925F1C815B5004100DA6C2E /* CTCraftTimer.h */,
+				C925F1C915B5004100DA6C2E /* CTCraftTimer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C925F1CE15B5054800DA6C2E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		C9ADDF0815B4FEB700A33214 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +106,11 @@
 		C9ADDF1D15B4FEB700A33214 /* CraftTimer */ = {
 			isa = PBXGroup;
 			children = (
+				C925F1CE15B5054800DA6C2E /* Storyboards */,
+				C925F1CD15B5054300DA6C2E /* Models */,
+				C925F1CC15B5053F00DA6C2E /* Controllers */,
 				C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */,
 				C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */,
-				C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */,
-				C9ADDF2C15B4FEB700A33214 /* CTViewController.h */,
-				C9ADDF2D15B4FEB700A33214 /* CTViewController.m */,
 				C9ADDF1E15B4FEB700A33214 /* Supporting Files */,
 			);
 			path = CraftTimer;
@@ -165,6 +194,7 @@
 				C9ADDF2415B4FEB700A33214 /* main.m in Sources */,
 				C9ADDF2815B4FEB700A33214 /* CTAppDelegate.m in Sources */,
 				C9ADDF2E15B4FEB700A33214 /* CTViewController.m in Sources */,
+				C925F1CA15B5004100DA6C2E /* CTCraftTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +306,7 @@
 				C9ADDF3315B4FEB700A33214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

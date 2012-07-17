@@ -10,4 +10,12 @@
 
 @interface CTViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startStopButton;
+@property (weak, nonatomic) IBOutlet UILabel *elapsedTime;
+@property (strong, nonatomic) NSTimer* displayTimer;
+@property (weak, nonatomic) IBOutlet UILabel *currentState;
+
+- (IBAction)startPause;
+- (IBAction)stop;
+
 @end
