@@ -15,11 +15,11 @@
 		C9ADDF2415B4FEB700A33214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2315B4FEB700A33214 /* main.m */; };
 		C9ADDF2815B4FEB700A33214 /* CTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */; };
 		C9ADDF2B15B4FEB700A33214 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ADDF2915B4FEB700A33214 /* MainStoryboard.storyboard */; };
-		C9ADDF2E15B4FEB700A33214 /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2D15B4FEB700A33214 /* CTViewController.m */; };
+		C9ADDF2E15B4FEB700A33214 /* CTTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ADDF2D15B4FEB700A33214 /* CTTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C925F1C815B5004100DA6C2E /* CTCraftTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CTCraftTimer.h; sourceTree = "<group>"; };
+		C925F1C815B5004100DA6C2E /* CTCraftTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCraftTimer.h; sourceTree = "<group>"; };
 		C925F1C915B5004100DA6C2E /* CTCraftTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCraftTimer.m; sourceTree = "<group>"; };
 		C9ADDF1315B4FEB700A33214 /* CraftTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ADDF1715B4FEB700A33214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -32,8 +32,8 @@
 		C9ADDF2615B4FEB700A33214 /* CTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTAppDelegate.h; sourceTree = "<group>"; };
 		C9ADDF2715B4FEB700A33214 /* CTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
 		C9ADDF2A15B4FEB700A33214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C9ADDF2C15B4FEB700A33214 /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
-		C9ADDF2D15B4FEB700A33214 /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
+		C9ADDF2C15B4FEB700A33214 /* CTTimerViewController.h */ = {isa = PBXFileReference; path = CTTimerViewController.h; sourceTree = "<group>"; };
+		C9ADDF2D15B4FEB700A33214 /* CTTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,8 @@
 		C925F1CC15B5053F00DA6C2E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C9ADDF2C15B4FEB700A33214 /* CTViewController.h */,
-				C9ADDF2D15B4FEB700A33214 /* CTViewController.m */,
+				C9ADDF2C15B4FEB700A33214 /* CTTimerViewController.h */,
+				C9ADDF2D15B4FEB700A33214 /* CTTimerViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			files = (
 				C9ADDF2415B4FEB700A33214 /* main.m in Sources */,
 				C9ADDF2815B4FEB700A33214 /* CTAppDelegate.m in Sources */,
-				C9ADDF2E15B4FEB700A33214 /* CTViewController.m in Sources */,
+				C9ADDF2E15B4FEB700A33214 /* CTTimerViewController.m in Sources */,
 				C925F1CA15B5004100DA6C2E /* CTCraftTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

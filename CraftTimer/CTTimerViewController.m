@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 GloryFish.org. All rights reserved.
 //
 
-#import "CTViewController.h"
+#import "CTTimerViewController.h"
 #import "CTCraftTimer.h"
 
-@interface CTViewController ()
+@interface CTTimerViewController ()
 
 @end
 
-@implementation CTViewController
+@implementation CTTimerViewController
 
 @synthesize elapsedTime = _elapsedTime;
 @synthesize displayTimer = _displayTimer;
