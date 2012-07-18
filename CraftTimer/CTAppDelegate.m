@@ -32,6 +32,8 @@
     
     CTCraftTimer* timer = [CTCraftTimer sharedTimer];
     [timer persist];
+    
+    [timer scheduleNotifications];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

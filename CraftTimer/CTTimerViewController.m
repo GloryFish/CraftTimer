@@ -18,6 +18,7 @@
 @synthesize elapsedTime = _elapsedTime;
 @synthesize displayTimer = _displayTimer;
 @synthesize currentState = _currentState;
+@synthesize timeRemaining = _timeRemaining;
 @synthesize startStopButton = _startStopButton;
 
 - (void)viewDidLoad
@@ -32,6 +33,7 @@
     [self setElapsedTime:nil];
     [self setStartStopButton:nil];
     [self setCurrentState:nil];
+    [self setTimeRemaining:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -72,15 +74,19 @@
     
     long min  = (long)craftTimer.totalElapsedTime / 60;    // divide two longs, truncates
     long sec  = (long)craftTimer.totalElapsedTime % 60;    // remainder of long divide
-
     self.elapsedTime.text = [[NSString alloc] initWithFormat:@"%02d:%02d", min, sec];
     
+    
+    min  = (long)craftTimer.segmentRemainingTime / 60;    // divide two longs, truncates
+    sec  = (long)craftTimer.segmentRemainingTime % 60;    // remainder of long divide
+    self.timeRemaining.text = [[NSString alloc] initWithFormat:@"%02d:%02d", min, sec];
     
     if (craftTimer.state == CTCraftTimerStateWorking) {
         self.currentState.text = @"Working";
     } else {
         self.currentState.text = @"Resting";
     }
+    
     
 }
 

@@ -53,10 +53,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Working" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ung-E0-V5D">
-                                <rect key="frame" x="20" y="96" width="280" height="42"/>
+                                <rect key="frame" x="20" y="167" width="280" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mhM-Tp-XlE">
+                                <rect key="frame" x="121" y="102" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -66,11 +73,25 @@
                         <outlet property="currentState" destination="ung-E0-V5D" id="YVc-EK-WlG"/>
                         <outlet property="elapsedTime" destination="oIn-7W-MoV" id="ixF-M5-lvy"/>
                         <outlet property="startStopButton" destination="GCL-O2-bT6" id="UpZ-z0-oaT"/>
+                        <outlet property="timeRemaining" destination="mhM-Tp-XlE" id="ovh-w7-RWZ"/>
                     </connections>
                 </viewController>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="CTTimerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CTTimerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startPause"/>
+                <relationship kind="action" name="stop"/>
+                <relationship kind="outlet" name="currentState" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="elapsedTime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startStopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="timeRemaining" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

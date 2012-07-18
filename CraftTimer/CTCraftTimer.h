@@ -16,6 +16,7 @@ typedef enum CTCraftTimerStates {
 @interface CTCraftTimer : NSObject
 
 @property (nonatomic, assign, readonly) NSTimeInterval totalElapsedTime;
+@property (nonatomic, assign, readonly) NSTimeInterval segmentRemainingTime;
 @property (nonatomic, assign) NSTimeInterval workInterval;
 @property (nonatomic, assign) NSTimeInterval restInterval;
 @property (nonatomic, assign, readonly) CTCraftTimerState state;
@@ -28,5 +29,7 @@ typedef enum CTCraftTimerStates {
 - (void)pause;
 
 - (void)persist;
+
+- (void)scheduleNotifications;
 
 @end
