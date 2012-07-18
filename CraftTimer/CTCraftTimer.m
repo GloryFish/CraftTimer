@@ -14,6 +14,8 @@
 @property (nonatomic, strong, readonly) NSDate* segmentStartTime;
 
 - (void)reset;
+- (NSString*)dataPath;
+- (void)persist;
 
 @end
 
@@ -39,7 +41,16 @@
 
 - (id)init { 
     if ( (self = [super init]) ) {
-        [self reset];
+        // Load coded data
+        NSData *codedData = [[NSData alloc] initWithContentsOfFile:[[self dataPath] stringByAppendingPathComponent:@"ctCraftTimer.dat"]];
+        
+        if (codedData == nil) {
+            [self reset];
+        } else {
+            NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:codedData];
+            self = [unarchiver decodeObjectForKey:@"ctCraftTimer"];
+        }
+
     }
     return self;
 }
@@ -106,6 +117,54 @@
     }
     
     return _state;
+}
+
+#pragma mark - NSCoding
+
+static const NSInteger currentClassVersion = 1; // Current class version
+
++ (void)initialize {
+    if (self == [CTCraftTimer class]) {
+        self.version = currentClassVersion;
+    }
+}
+
+-(void)encodeWithCoder:(NSCoder*)coder {
+    [coder encodeDouble:self.accumulatedTime forKey:@"accumulatedTime"];
+    [coder encodeObject:self.segmentStartTime forKey:@"segmentStartTime"];
+    [coder encodeDouble:self.workInterval forKey:@"workInterval"];
+    [coder encodeDouble:self.restInterval forKey:@"restInterval"];
+    [coder encodeInt:self.state forKey:@"state"];
+    [coder encodeBool:self.paused forKey:@"paused"];
+}
+
+-(id)initWithCoder:(NSCoder*)coder {
+    if (self=[super init]) {
+        //        NSInteger version = [coder versionForClassName:@"OCCheckbook"];
+        _accumulatedTime = [coder decodeDoubleForKey:@"accumulatedTime"];
+        _segmentStartTime = [coder decodeObjectForKey:@"segmentStartTime"];
+        _workInterval = [coder decodeDoubleForKey:@"workInterval"];
+        _restInterval = [coder decodeDoubleForKey:@"restInterval"];
+        _state = [coder decodeIntForKey:@"state"];
+        _paused = [coder decodeBoolForKey:@"paused"];
+    }
+    return self;
+}
+
+- (NSString*)dataPath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0]; 
+}
+
+- (void)persist {
+    // Generate archive
+    NSMutableData *data = [[NSMutableData alloc] init];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];          
+    [archiver encodeObject:self forKey:@"ctCraftTimer"];
+    [archiver finishEncoding];
+    
+    // Save archive to disk
+    [data writeToFile:[[self dataPath] stringByAppendingPathComponent:@"ctCraftTimer.dat"] atomically:YES];
 }
 
 @end

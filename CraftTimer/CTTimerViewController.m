@@ -36,6 +36,17 @@
     // Release any retained subviews of the main view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    CTCraftTimer* timer = [CTCraftTimer sharedTimer];
+    if (!timer.paused) {
+        [self scheduleDisplayTimer];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self invalidateDisplayTimer];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
@@ -52,6 +63,7 @@
 - (void)invalidateDisplayTimer {
     if (self.displayTimer) {
         [self.displayTimer invalidate];
+        self.displayTimer = nil;
     }
 }
 
@@ -94,7 +106,6 @@
     [self.startStopButton setTitle:@"Start" forState:UIControlStateNormal];
     [self invalidateDisplayTimer];
     self.elapsedTime.text = [[NSString alloc] initWithFormat:@"%02d:%02d", 0, 0];
-
 }
 
 @end

@@ -27,5 +27,6 @@ typedef enum CTCraftTimerStates {
 - (void)stop;
 - (void)pause;
 
+- (void)persist;
 
 @end
